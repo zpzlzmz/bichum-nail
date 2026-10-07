@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>비춤네일 | 울산 북구 상안동</title>
+<meta name="description" content="울산 북구 상안동 비춤네일. 금빛헤어, 금수저 애견미용과 한 공간. 10:00~20:00, 화요일 휴무. 카톡채널로 예약.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Gaegu:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+:root{
+  --paper:#FFF3B0;
+  --ink:#141414;
+  --coral:#FF4D5A;
+  --green:#1F8A4C;
+  --sky:#8FD3FF;
+  --white:#FFFFFF;
+  --sans:"Pretendard Variable",Pretendard,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --disp:"Jua",var(--sans);
+  --hand:"Gaegu",cursive;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.55;word-break:keep-all;-webkit-font-smoothing:antialiased;padding-bottom:84px;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:880px;margin:0 auto;padding-left:20px;padding-right:20px}
+:focus-visible{outline:3px solid var(--coral);outline-offset:3px}
+
+/* 스티커 */
+.stk{
+  display:inline-block;background:var(--white);border:3px solid var(--ink);
+  box-shadow:5px 5px 0 var(--ink);padding:.15em .45em;line-height:1.1;
+}
+.stk.coral{background:var(--coral);color:#fff}
+.stk.green{background:var(--green);color:#fff}
+.stk.sky{background:var(--sky)}
+
+/* 상단 */
+.top{display:flex;justify-content:space-between;align-items:center;padding-top:16px;padding-bottom:8px;font-family:var(--disp);font-size:18px}
+.top a:last-child{font-family:var(--sans);font-weight:600;font-size:14px;text-decoration:underline;text-underline-offset:3px}
+
+/* 히어로: 스티커 더미 */
+.hero{padding-top:28px;padding-bottom:28px}
+.hero .status{font-family:var(--hand);font-size:22px;line-height:1;margin-bottom:14px;display:inline-flex;align-items:center;gap:8px}
+.hero .status b{display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--green);border:2px solid var(--ink)}
+.hero .status.closed b{background:var(--coral)}
+.stack{display:flex;flex-direction:column;align-items:flex-start;gap:10px;font-family:var(--disp)}
+.stack .stk{transform:rotate(-2deg)}
+.stack .stk:nth-child(2){transform:rotate(1.5deg);margin-left:8%}
+.stack .stk:nth-child(3){transform:rotate(-1deg);margin-left:3%}
+.stack .big{font-size:clamp(58px,17vw,120px)}
+.stack .mid{font-size:clamp(28px,8vw,52px)}
+.hero p.sub{margin-top:26px;font-size:17px;max-width:30ch}
+.hero p.sub span{font-family:var(--hand);font-size:22px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 20px;font-family:var(--disp);font-size:19px;background:var(--white);border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink);transition:transform .08s,box-shadow .08s}
+.btn:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--ink)}
+.btn.coral{background:var(--coral);color:#fff}
+
+/* 해시태그 띠 */
+.tape{background:var(--ink);color:var(--paper);font-family:var(--disp);font-size:20px;padding:10px 0;overflow:hidden;white-space:nowrap;border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)}
+.tape span{display:inline-block;padding-right:2.2em;animation:run 22s linear infinite}
+@keyframes run{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.tape span{animation:none}}
+
+/* 섹션 */
+section{padding-top:44px;padding-bottom:44px}
+h2{font-family:var(--disp);font-size:clamp(30px,7vw,44px);line-height:1.1;margin-bottom:22px}
+h2 .stk{transform:rotate(-1.5deg)}
+
+/* 세 가게 */
+.shops{display:grid;gap:14px}
+.shop{background:var(--white);border:3px solid var(--ink);box-shadow:5px 5px 0 var(--ink);padding:18px 18px 16px;position:relative}
+.shop h3{font-family:var(--disp);font-size:26px;margin-bottom:6px}
+.shop p{font-size:15px;max-width:40ch}
+.shop .lab{position:absolute;top:-12px;right:14px;font-family:var(--hand);font-size:18px;line-height:1;padding:3px 8px;border:2px solid var(--ink);background:var(--sky);transform:rotate(3deg)}
+.shop.nail .lab{background:var(--coral);color:#fff}
+.shop.pet .lab{background:var(--green);color:#fff}
+@media (min-width:720px){.shops{grid-template-columns:repeat(3,1fr)}}
+
+/* 폴라로이드 갤러리 */
+.polas{display:grid;grid-template-columns:repeat(2,1fr);gap:18px 14px}
+.pola{background:var(--white);border:3px solid var(--ink);padding:8px 8px 34px;position:relative;box-shadow:4px 4px 0 var(--ink)}
+.pola:nth-child(odd){transform:rotate(-1.5deg)}
+.pola:nth-child(even){transform:rotate(1.2deg)}
+.pola .ph{aspect-ratio:1;background:repeating-linear-gradient(45deg,#f1e5a5 0 8px,#f8efc2 8px 16px);overflow:hidden}
+.pola img{width:100%;height:100%;object-fit:cover}
+.pola.empty img{display:none}
+.pola figcaption{position:absolute;left:0;right:0;bottom:6px;text-align:center;font-family:var(--hand);font-size:19px;line-height:1}
+@media (min-width:720px){.polas{grid-template-columns:repeat(4,1fr)}}
+.note{margin-top:18px;font-size:14px}
+
+/* 안내 표 */
+table{width:100%;border-collapse:collapse;background:var(--white);border:3px solid var(--ink);box-shadow:5px 5px 0 var(--ink)}
+th,td{padding:14px 14px;border-bottom:2px solid var(--ink);text-align:left;vertical-align:top}
+tr:last-child th,tr:last-child td{border-bottom:0}
+th{font-family:var(--disp);font-weight:400;font-size:18px;width:96px;background:var(--paper);border-right:2px solid var(--ink)}
+td{font-size:17px}
+td small{display:block;font-size:14px;opacity:.7}
+
+/* 오시는 길 */
+.addr{font-family:var(--disp);font-size:clamp(26px,6vw,40px);line-height:1.2;margin-bottom:18px}
+.maps{display:flex;flex-wrap:wrap;gap:12px}
+
+footer{padding-top:30px;padding-bottom:30px;font-size:14px;font-family:var(--hand);font-size:18px}
+
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:10;display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:var(--paper);border-top:3px solid var(--ink)}
+@media (min-width:720px){.dock{display:none} body{padding-bottom:0}}
+</style>
+</head>
+<body>
+<header class="wrap top">
+  <span>비춤네일</span>
+  <a href="https://www.instagram.com/bichum_nail/" target="_blank" rel="noopener">인스타 @bichum_nail</a>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <p class="status" id="status"><b></b><span id="status-text">10:00 ~ 20:00</span></p>
+    <div class="stack">
+      <span class="stk big">비춤네일</span>
+      <span class="stk mid green">금수저 애견미용</span>
+      <span class="stk mid sky">금빛헤어</span>
+    </div>
+    <p class="sub">울산 북구 상안동, 아진로 41-12 1층. <span>세 가게가 한 공간에 있어요.</span> 머리하고 손톱하고 강아지 미용까지 한 번에.</p>
+    <div class="cta">
+      <a class="btn coral kakao" href="#" target="_blank" rel="noopener">카톡채널로 예약</a>
+      <a class="btn" href="#map">오시는 길</a>
+    </div>
+  </div>
+
+  <div class="tape" aria-hidden="true"><span>#울산네일 #북구네일 #상안동네일 #울산애견미용 #북구애견미용 #상안동헤어 #화요일휴무 &nbsp; #울산네일 #북구네일 #상안동네일 #울산애견미용 #북구애견미용 #상안동헤어 #화요일휴무 &nbsp;</span></div>
+
+  <section class="wrap">
+    <h2><span class="stk">한 공간, 세 가게</span></h2>
+    <div class="shops">
+      <article class="shop nail"><span class="lab">예약제</span><h3>비춤네일</h3><p>젤네일, 케어, 아트, 패디큐어. 원하는 디자인은 사진으로 보여주세요.</p></article>
+      <article class="shop pet"><span class="lab">예약제</span><h3>금수저 애견미용</h3><p>전체미용, 부분미용, 목욕. 아이 성향에 맞춰 천천히.</p></article>
+      <article class="shop hair"><span class="lab">예약제</span><h3>금빛헤어</h3><p>커트, 펌, 염색. 네일 시간에 맞춰 같이 예약하면 기다림 없이.</p></article>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <h2><span class="stk coral">요즘 작업</span></h2>
+    <div class="polas">
+      <figure class="pola"><div class="ph"><img src="../img/nail-1.jpg" alt="네일"></div><figcaption>네일</figcaption></figure>
+      <figure class="pola"><div class="ph"><img src="../img/nail-2.jpg" alt="네일"></div><figcaption>네일</figcaption></figure>
+      <figure class="pola"><div class="ph"><img src="../img/nail-3.jpg" alt="네일"></div><figcaption>네일</figcaption></figure>
+      <figure class="pola"><div class="ph"><img src="../img/nail-4.jpg" alt="네일"></div><figcaption>네일</figcaption></figure>
+      <figure class="pola"><div class="ph"><img src="../img/pet-1.jpg" alt="애견미용"></div><figcaption>애견미용</figcaption></figure>
+      <figure class="pola"><div class="ph"><img src="../img/pet-2.jpg" alt="애견미용"></div><figcaption>애견미용</figcaption></figure>
+      <figure class="pola"><div class="ph"><img src="../img/pet-3.jpg" alt="애견미용"></div><figcaption>애견미용</figcaption></figure>
+      <figure class="pola"><div class="ph"><img src="../img/shop-1.jpg" alt="매장"></div><figcaption>매장</figcaption></figure>
+    </div>
+    <p class="note">더 많은 사진은 인스타 @bichum_nail</p>
+  </section>
+
+  <section class="wrap">
+    <h2><span class="stk sky">이용 안내</span></h2>
+    <table>
+      <tr><th>시간</th><td>10:00 ~ 20:00</td></tr>
+      <tr><th>휴무</th><td>매주 화요일</td></tr>
+      <tr><th>예약</th><td>카톡채널 「비춤네일」<small>인스타 DM은 확인이 어려워요</small></td></tr>
+      <tr><th>주소</th><td>울산 북구 아진로 41-12, 1층 101호</td></tr>
+    </table>
+  </section>
+
+  <section class="wrap" id="map">
+    <h2><span class="stk green">오시는 길</span></h2>
+    <p class="addr">울산 북구 아진로 41-12<br>1층 101호</p>
+    <div class="maps">
+      <a class="btn" href="https://map.naver.com/p/search/%EC%9A%B8%EC%82%B0%20%EB%B6%81%EA%B5%AC%20%EC%95%84%EC%A7%84%EB%A1%9C%2041-12" target="_blank" rel="noopener">네이버 지도</a>
+      <a class="btn" href="https://map.kakao.com/link/search/%EC%9A%B8%EC%82%B0%20%EB%B6%81%EA%B5%AC%20%EC%95%84%EC%A7%84%EB%A1%9C%2041-12" target="_blank" rel="noopener">카카오맵</a>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">비춤네일 · 금빛헤어 · 금수저 애견미용</footer>
+
+<nav class="dock" aria-label="빠른 연결">
+  <a class="btn coral kakao" href="#" target="_blank" rel="noopener">카톡 문의</a>
+  <a class="btn" href="https://map.naver.com/p/search/%EC%9A%B8%EC%82%B0%20%EB%B6%81%EA%B5%AC%20%EC%95%84%EC%A7%84%EB%A1%9C%2041-12" target="_blank" rel="noopener">길찾기</a>
+</nav>
+
+<script>
+const KAKAO_CHANNEL_URL = ""; // 예: "https://pf.kakao.com/_abcdef"
+(function(){
+  document.querySelectorAll(".kakao").forEach(a => a.href = KAKAO_CHANNEL_URL || "https://pf.kakao.com/");
+  const now = new Date(new Date().toLocaleString("en-US",{timeZone:"Asia/Seoul"}));
+  const d = now.getDay(), h = now.getHours()+now.getMinutes()/60;
+  const el = document.getElementById("status"), t = document.getElementById("status-text");
+  if (d===2){el.classList.add("closed");t.textContent="오늘은 화요일! 쉬어요";}
+  else if (h<10){el.classList.add("closed");t.textContent="오늘 10시에 열어요";}
+  else if (h<20){t.textContent="지금 열려 있어요 (20시까지)";}
+  else {el.classList.add("closed");t.textContent="오늘 영업 끝! 내일 10시";}
+  document.querySelectorAll(".pola").forEach(f=>{const i=f.querySelector("img");const s=()=>{if(i.complete)f.classList.toggle("empty",i.naturalWidth===0)};i.addEventListener("load",s);i.addEventListener("error",s);s();});
+})();
+</script>
+</body>
+</html>
